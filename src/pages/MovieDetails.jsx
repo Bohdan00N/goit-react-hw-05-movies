@@ -7,7 +7,7 @@ import { MovieItem } from 'components/MovieItem/MovieItem';
 import { Suspense } from 'react';
 
 const MovieDetails = () => {
-const { id } = useParams();
+const { movieId } = useParams();
 const location = useLocation();
 const [title, setTitle] = useState("");
 const [poster, setPoster] = useState("");
@@ -20,7 +20,7 @@ const back = location.state?.from ?? "/movies";
 useEffect(() => {
     const MovieDetails = async () => {
         try {
-        const response = await getMovieById(id);
+        const response = await getMovieById(movieId);
         setTitle(response.title);
         setPoster(response.poster_path);    
         setOverview(response.overview);
@@ -34,7 +34,7 @@ useEffect(() => {
         }
         }
         MovieDetails();
-}, [id]);
+}, [movieId]);
 
 return (
     <>
