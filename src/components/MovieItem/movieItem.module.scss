@@ -1,0 +1,41 @@
+.movieItem {
+  display: flex;
+  margin-top: 20px;
+}
+.movieInfoContainer {
+  display: flex;
+  flex-direction: row;
+}
+.moviePoster {
+  margin: 20px;
+}
+.movieInfo {
+  margin-left: 50px;
+}
+.movieNotes {
+  font-size: 30px;
+  color: rgb(0, 217, 255);
+  font-weight: 500;
+  line-height: 35px;
+}
+.movieNotesItem {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(17, 233, 89);
+}
+.btnBack {
+  background-color: rgb(0, 217, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  border: none;
+  position: absolute;
+  left: 40px;
+  top: 45px;
+  font-size: 18px;
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  &:hover,
+  &:focus {
+    text-shadow: #fc0 1px 0 10px;
+  }
+}

@@ -1,0 +1,23 @@
+.listFilms {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  font-style: italic;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+.listFilmsTitle {
+  color: #cef0d4;
+  font-family: 'Rouge Script', cursive;
+  font-size: 85px;
+  font-weight: normal;
+  line-height: 85px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+
+  text-align: center;
+  text-shadow: 1px 1px 2px #082b34;
+}

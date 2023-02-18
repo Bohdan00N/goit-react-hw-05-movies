@@ -1,3 +1,5 @@
+import css from './findFilm.module.scss'
+
 const FilmSearch = ({ film }) => {
     let filmName = null;
   try {
@@ -8,6 +10,6 @@ const FilmSearch = ({ film }) => {
   } catch (error) {
     console.log(error);
   }
-  return <li id={film.id}>{filmName}</li>;
+  return <li className={css.listFilmsItem} id={film.id}>{filmName}</li>;
 };
 export default FilmSearch;

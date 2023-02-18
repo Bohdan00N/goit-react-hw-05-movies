@@ -1,0 +1,20 @@
+.listFilmsItem {
+  list-style: none;
+  position: relative;
+  width: 30%;
+  padding: 20px;
+  margin: 0.8em auto;
+  color: #fff;
+  background: #97c02f;
+  text-transform: capitalize;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 16px 16px 0;
+    border-style: solid;
+    border-color: #658E15 #fff;
+  }
+}

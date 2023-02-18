@@ -14,7 +14,7 @@ export const MovieItem = ({
       <Link to={location} className={css.goBack}>
         <button className={css.btnBack}>Go back</button>
       </Link>
-      <div className="movieInfoContainer">
+      <div className={css.movieInfoContainer}>
         <img
           className={css.moviePoster}
           src={`https://image.tmdb.org/t/p/original${posterPath}`}
