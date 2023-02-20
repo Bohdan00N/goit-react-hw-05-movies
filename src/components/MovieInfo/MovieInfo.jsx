@@ -1,5 +1,5 @@
 import css from './movieInfo.module.scss'
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const MovieInfo = ({listTitle, location}) => {       
     return (

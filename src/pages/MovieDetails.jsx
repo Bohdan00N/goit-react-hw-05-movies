@@ -21,11 +21,14 @@ useEffect(() => {
     const MovieDetails = async () => {
         try {
         const response = await getMovieById(movieId);
+        console.log(response);
+        
         setTitle(response.title);
         setPoster(response.poster_path);    
         setOverview(response.overview);
         setGenres(response.genres.map(genre=>genre.name).join(", "));
-        setPopularity(response.popularity); 
+        setPopularity(response.vote_average*10);
+ 
         if(response === undefined) {
         Notify.failure('Sorry, there is no information about this movie')
         }

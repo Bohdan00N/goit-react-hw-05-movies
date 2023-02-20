@@ -24,14 +24,14 @@ const getMovieById = async (id, params) => {
   });
   return data;
 };
-const getCastById = async (id, params) => {
-  const { data } = await moviesApi.get(`movie/${id}/credits`, {
+const getCastById = async (movie_id, params) => {
+  const { data } = await moviesApi.get(`movie/${movie_id}/credits`, {
     params,
   });
   return data;
 };
-const getReviewById = async (id, params) => {
-  const { data } = await moviesApi.get(`movie/${id}/reviews`, {
+const getReviewById = async (movie_id, params) => {
+  const { data } = await moviesApi.get(`movie/${movie_id}/reviews`, {
     params,
   });
   return data;

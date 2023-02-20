@@ -23,9 +23,8 @@ const Cast = () => {
     useEffect(() => {
       const fetchCast = async () => {
         try {
-          const response = await getCastById(movieId);
-          const { Cast } = response.data;
-          setCast(Cast);
+          const {cast} = await getCastById(movieId);
+          setCast(cast);
         } catch (error) {
           console.log(error);
         }
@@ -42,10 +41,10 @@ const Cast = () => {
               src={`https://image.tmdb.org/t/p/original${actor.profile_path}`}
               alt={actor.name}
               loading="lazy"
-              width="100"
-              height="150"
+              width="200"
+              height="300"
             />
-            <p>{actor.name}</p>
+            <p className={css.actorName}>{actor.name}</p>
             <p className={css.actorImg}>Character: {actor.character}</p>
           </div>
         ))
